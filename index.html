@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Zahlenkonvertierung</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h1>Zahlenkonvertierungstool</h1>
+
+			<!-- Merge Sort Bereich -->
+			<div class="algorithm-section">
+				<h2>Merge Sort Konvertierung</h2>
+				<label for="merge-input">Zahl eingeben:</label>
+				<input
+					type="text"
+					id="merge-input"
+					placeholder="Geben Sie eine Zahl ein"
+				/>
+				<label for="merge-system">Von System:</label>
+				<select id="merge-system">
+					<option value="decimal">Dezimal</option>
+					<option value="binary">Binär</option>
+					<option value="hexadecimal">Hexadezimal</option>
+				</select>
+				<button id="merge-convert-btn">Konvertieren</button>
+
+				<div class="result">
+					<p>Dezimal: <span id="merge-decimal-result"></span></p>
+					<p>Binär: <span id="merge-binary-result"></span></p>
+					<p>Hexadezimal: <span id="merge-hexadecimal-result"></span></p>
+					<p id="merge-speed"></p>
+					<!-- Anzeige der Geschwindigkeit -->
+				</div>
+			</div>
+
+			<!-- Bubble Sort Bereich -->
+			<div class="algorithm-section">
+				<h2>Bubble Sort Konvertierung</h2>
+				<label for="bubble-input">Zahl eingeben:</label>
+				<input
+					type="text"
+					id="bubble-input"
+					placeholder="Geben Sie eine Zahl ein"
+				/>
+				<label for="bubble-system">Von System:</label>
+				<select id="bubble-system">
+					<option value="decimal">Dezimal</option>
+					<option value="binary">Binär</option>
+					<option value="hexadecimal">Hexadezimal</option>
+				</select>
+				<button id="bubble-convert-btn">Konvertieren</button>
+
+				<div class="result">
+					<p>Dezimal: <span id="bubble-decimal-result"></span></p>
+					<p>Binär: <span id="bubble-binary-result"></span></p>
+					<p>Hexadezimal: <span id="bubble-hexadecimal-result"></span></p>
+					<p id="bubble-speed"></p>
+					<!-- Anzeige der Geschwindigkeit -->
+				</div>
+			</div>
+
+			<!-- Zahlenkonvertierung ohne Sortierung -->
+			<div class="algorithm-section">
+				<h2>Einfacher Konvertierungsalgorithmus</h2>
+				<label for="simple-input">Zahl eingeben:</label>
+				<input
+					type="text"
+					id="simple-input"
+					placeholder="Geben Sie eine Zahl ein"
+				/>
+				<label for="simple-system">Von System:</label>
+				<select id="simple-system">
+					<option value="decimal">Dezimal</option>
+					<option value="binary">Binär</option>
+					<option value="hexadecimal">Hexadezimal</option>
+				</select>
+				<button id="simple-convert-btn">Konvertieren</button>
+
+				<div class="result">
+					<p>Dezimal: <span id="simple-decimal-result"></span></p>
+					<p>Binär: <span id="simple-binary-result"></span></p>
+					<p>Hexadezimal: <span id="simple-hexadecimal-result"></span></p>
+					<p id="simple-speed"></p>
+					<!-- Anzeige der Geschwindigkeit -->
+				</div>
+			</div>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
